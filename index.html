@@ -19,7 +19,7 @@
 <div class="nav-bar" style="width: 909px; height: 65px; left: 499px; top: 69px; position: absolute; background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 28px"></div>
   <div style="padding: 10px; left: 552px; top: 76px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
     <div class="c-v" style="color: black; font-size: 40px; font-family: Helvetica Neue; font-weight: 900; line-height: 27px; word-wrap: break-word">
-      <a href="Marshall Washington CV Final.pdf" target="_blank" style="text-decoration: none; color: black;">CV</a>
+      <a href="CV Marshall Washington Final.pdf" target="_blank" style="text-decoration: none; color: black;">CV</a>
     </div>
   </div>
   <div style="padding: 10px; left: 845px; top: 76px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
@@ -114,3 +114,36 @@
 }
 </style>
 
+<style>
+    .c-v {
+        position: relative;
+        display: inline-block; /* Ensures the element behaves properly */
+    }
+
+    .c-v a {
+        text-decoration: none;
+        color: black;
+        font-size: 40px;
+        font-family: "Helvetica Neue", sans-serif;
+        font-weight: 900;
+        position: relative;
+    }
+
+    .c-v a::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -3px;
+        width: 0%;
+        height: 2px;
+        background-color: black;
+        opacity: 0;
+        transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .c-v a:hover::after {
+        width: 100%;
+        left: 0;
+        opacity: 1;
+    }
+</style>
