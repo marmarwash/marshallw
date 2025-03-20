@@ -18,17 +18,17 @@
   </div>
 <div class="nav-bar" style="width: 909px; height: 65px; left: 499px; top: 69px; position: absolute; background: white; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 28px"></div>
   <div style="padding: 10px; left: 552px; top: 76px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-    <div style="color: black; font-size: 40px; font-family: Helvetica Neue; font-weight: 900; line-height: 27px; word-wrap: break-word">
+    <div class="c-v" style="color: black; font-size: 40px; font-family: Helvetica Neue; font-weight: 900; line-height: 27px; word-wrap: break-word">
       <a href="Marshall Washington CV Final.pdf" target="_blank" style="text-decoration: none; color: black;">CV</a>
     </div>
   </div>
   <div style="padding: 10px; left: 845px; top: 76px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-    <div style="color: black; font-size: 40px; font-family: Helvetica Neue; font-weight: 900; line-height: 27px; word-wrap: break-word">
+    <div class="portfolio" style="color: black; font-size: 40px; font-family: Helvetica Neue; font-weight: 900; line-height: 27px; word-wrap: break-word">
       <a href="#" target="_blank" style="text-decoration: none; color: black;">Portfolio</a>
     </div>
   </div>
   <div style="padding: 10px; left: 1181px; top: 79px; position: absolute; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-    <div style="color: black; font-size: 40px; font-family: Helvetica Neue; font-weight: 900; line-height: 27px; word-wrap: break-word">
+    <div class="sub-stack" style="color: black; font-size: 40px; font-family: Helvetica Neue; font-weight: 900; line-height: 27px; word-wrap: break-word">
       <a href="https://martiallaw.substack.com/" target="_blank" style="text-decoration: none; color: black;">Substack</a>
     </div>
   </div>
@@ -84,4 +84,120 @@
     opacity: 1;
 }
 </style>
+  
+<style>
+.linked-in {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 700;
+}
 
+.linked-in::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.linked-in:hover::after {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+}
+</style>
+
+<style>
+.c-v {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
+.c-v::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.c-v::after {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+}
+</style>
+
+<style>
+.portfolio{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
+.portfolio::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.portfolio::after {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+}
+</style>
+
+<style>
+.sub-stack{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 700;
+}
+
+.sub-stack::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.sub-stack::after {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+}
+</style>
+  
